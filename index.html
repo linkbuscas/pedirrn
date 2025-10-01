@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DarkHacker - Justiça Digital</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://unpkg.com/feather-icons"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vanta@latest/dist/vanta.net.min.js"></script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@400;700;900&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;700&display=swap');
+        body {
+            font-family: 'Red Hat Display', sans-serif;
+        }
+        .code-font {
+            font-family: 'JetBrains Mono', monospace;
+        }
+        .terminal {
+            background: rgba(0, 0, 0, 0.8);
+            border: 1px solid #2d3748;
+            border-radius: 0.5rem;
+            box-shadow: 0 0 20px rgba(74, 222, 128, 0.3);
+        }
+        .command {
+            color: #4ade80;
+        }
+        .cursor {
+            animation: blink 1s infinite;
+        }
+        @keyframes blink {
+            0%, 100% { opacity: 1; }
+            50% { opacity: 0; }
+        }
+        .glow {
+            text-shadow: 0 0 10px rgba(74, 222, 128, 0.7);
+        }
+        .hero-bg {
+            background: linear-gradient(135deg, #000000 0%, #111827 100%);
+        }
+        .skill-card {
+            transition: all 0.3s ease;
+        }
+        .skill-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 20px rgba(74, 222, 128, 0.2);
+        }
+    </style>
+</head>
+<body class="bg-gray-900 text-gray-100">
+    <!-- Vanta.js Background -->
+    <div id="vanta-bg" class="fixed top-0 left-0 w-full h-full z-0"></div>
+    
+    <div class="relative z-10">
+        <!-- Navigation -->
+        <nav class="px-6 py-4 flex justify-between items-center border-b border-green-500 border-opacity-30">
+            <div class="text-2xl font-bold">
+                <span class="text-green-500">Dark</span>Hacker
+            </div>
+            <div class="hidden md:flex space-x-8">
+                <a href="#about" class="hover:text-green-400 transition">Sobre</a>
+                <a href="#skills" class="hover:text-green-400 transition">Habilidades</a>
+                <a href="#mission" class="hover:text-green-400 transition">Missão</a>
+                <a href="#philosophy" class="hover:text-green-400 transition">Filosofia</a>
+            </div>
+            <button class="md:hidden">
+                <i data-feather="menu"></i>
+            </button>
+        </nav>
+
+        <!-- Hero Section -->
+        <section class="hero-bg min-h-screen flex items-center px-6 py-20">
+            <div class="max-w-4xl mx-auto text-center">
+                <div class="terminal p-6 mb-8 max-w-2xl mx-auto">
+                    <div class="code-font text-left">
+                        <p class="text-gray-400">$ whoami</p>
+                        <p class="command">> DarkHacker<span class="cursor">_</span></p>
+                        <p class="text-gray-400 mt-4">$ mission --status</p>
+                        <p class="command">> Executando justiça digital...</p>
+                    </div>
+                </div>
+                <h1 class="text-5xl md:text-7xl font-bold mb-6 glow">
+                    <span class="text-green-500">Justiça</span> Digital
+                </h1>
+                <p class="text-xl md:text-2xl mb-8 max-w-2xl mx-auto">
+                    Onde o sistema falha, eu atuo. Um ano de treinamento, uma vida dedicada à justiça.
+                </p>
+                <div class="flex justify-center space-x-4">
+                    <a href="#mission" class="bg-green-600 hover:bg-green-700 px-6 py-3 rounded-lg font-bold transition">
+                        Minha Missão
+                    </a>
+                    <a href="#philosophy" class="border border-green-600 hover:bg-green-600 hover:bg-opacity-10 px-6 py-3 rounded-lg font-bold transition">
+                        Minha Filosofia
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!-- About Section -->
+        <section id="about" class="py-20 px-6">
+            <div class="max-w-4xl mx-auto">
+                <h2 class="text-3xl md:text-4xl font-bold mb-12 text-center">
+                    <span class="text-green-500">root@darkhacker</span> ~/sobre
+                </h2>
+                <div class="grid md:grid-cols-2 gap-12 items-center">
+                    <div>
+                        <p class="text-lg mb-4">
+                            Autodidata, hacker ético com um ano de treinamento intensivo em segurança ofensiva e análise de sistemas.
+                        </p>
+                        <p class="text-lg mb-4">
+                            Minha jornada começou com a frustração de ver injustiças digitais ficarem impunes. Decidi agir onde o sistema falha.
+                        </p>
+                        <p class="text-lg">
+                            Não sou um vilão. Sou a consequência para aqueles que abusam do poder digital.
+                        </p>
+                    </div>
+                    <div class="flex justify-center">
+                        <div class="w-64 h-64 bg-gray-800 rounded-full border-2 border-green-500 overflow-hidden">
+                            <!-- Placeholder for profile image -->
+                            <div class="w-full h-full bg-gray-700 flex items-center justify-center">
+                                <i data-feather="shield" class="w-20 h-20 text-green-500"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Skills Section -->
+        <section id="skills" class="py-20 px-6 bg-gray-800">
+            <div class="max-w-4xl mx-auto">
+                <h2 class="text-3xl md:text-4xl font-bold mb-12 text-center">
+                    <span class="text-green-500">$</span> Habilidades Técnicas
+                </h2>
+                <div class="grid md:grid-cols-3 gap-8">
+                    <div class="skill-card bg-gray-900 p-6 rounded-lg border-l-4 border-green-500">
+                        <div class="text-green-500 mb-4">
+                            <i data-feather="lock" class="w-10 h-10"></i>
+                        </div>
+                        <h3 class="text-xl font-bold mb-2">Penetration Testing</h3>
+                        <p class="text-gray-400">Testes de invasão em sistemas web e redes, identificando vulnerabilidades críticas.</p>
+                    </div>
+                    <div class="skill-card bg-gray-900 p-6 rounded-lg border-l-4 border-green-500">
+                        <div class="text-green-500 mb-4">
+                            <i data-feather="code" class="w-10 h-10"></i>
+                        </div>
+                        <h3 class="text-xl font-bold mb-2">Análise Forense</h3>
+                        <p class="text-gray-400">Recuperação e análise de dados para provar crimes digitais e inocentar vítimas.</p>
+                    </div>
+                    <div class="skill-card bg-gray-900 p-6 rounded-lg border-l-4 border-green-500">
+                        <div class="text-green-500 mb-4">
+                            <i data-feather="cpu" class="w-10 h-10"></i>
+                        </div>
+                        <h3 class="text-xl font-bold mb-2">Engenharia Reversa</h3>
+                        <p class="text-gray-400">Descompilação e análise de malware e sistemas proprietários para encontrar backdoors.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Mission Section -->
+        <section id="mission" class="py-20 px-6">
+            <div class="max-w-4xl mx-auto">
+                <h2 class="text-3xl md:text-4xl font-bold mb-12 text-center">
+                    <span class="text-green-500">#</span> Minha Missão
+                </h2>
+                <div class="bg-gray-800 rounded-lg p-8 border border-gray-700">
+                    <div class="grid md:grid-cols-2 gap-8 items-center">
+                        <div>
+                            <h3 class="text-2xl font-bold mb-6 text-green-400">Justiça Para os Injustiçados</h3>
+                            <p class="mb-6">
+                                Vi muitos inocentes serem presos enquanto criminosos digitais reais permaneciam livres. 
+                                Minha missão é corrigir esse desequilíbrio.
+                            </p>
+                            <ul class="space-y-3">
+                                <li class="flex items-start">
+                                    <i data-feather="check-circle" class="text-green-500 mr-2 mt-1"></i>
+                                    <span>Expor corrupção digital</span>
+                                </li>
+                                <li class="flex items-start">
+                                    <i data-feather="check-circle" class="text-green-500 mr-2 mt-1"></i>
+                                    <span>Provar inocência de acusados injustamente</span>
+                                </li>
+                                <li class="flex items-start">
+                                    <i data-feather="check-circle" class="text-green-500 mr-2 mt-1"></i>
+                                    <span>Educar sobre segurança digital</span>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="flex justify-center">
+                            <div class="terminal p-4 w-full">
+                                <div class="code-font text-sm">
+                                    <p class="text-gray-400">$ darkhacker --mission --target=corrupt_system</p>
+                                    <p class="command">> Analisando alvo...</p>
+                                    <p class="command">> Vulnerabilidades encontradas: 3 críticas</p>
+                                    <p class="command">> Coletando evidências...</p>
+                                    <p class="text-green-500">> Missão cumprida. Justiça será servida.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Philosophy Section -->
+        <section id="philosophy" class="py-20 px-6 bg-gray-800">
+            <div class="max-w-4xl mx-auto text-center">
+                <h2 class="text-3xl md:text-4xl font-bold mb-6">
+                    <span class="text-green-500">Ethos</span> Hacker
+                </h2>
+                <p class="text-xl mb-12 max-w-2xl mx-auto">
+                    "Não quebre as regras - mas mostre como elas podem ser quebradas, para que sejam melhoradas."
+                </p>
+                
+                <div class="grid md:grid-cols-3 gap-8 mt-12">
+                    <div class="bg-gray-900 p-6 rounded-lg">
+                        <div class="text-green-500 mb-4">
+                            <i data-feather="eye" class="w-10 h-10"></i>
+                        </div>
+                        <h3 class="text-xl font-bold mb-4">Transparência</h3>
+                        <p class="text-gray-400">A verdade deve ser acessível, não escondida atrás de sistemas fechados.</p>
+                    </div>
+                    <div class="bg-gray-900 p-6 rounded-lg">
+                        <div class="text-green-500 mb-4">
+                            <i data-feather="balance-scale" class="w-10 h-10"></i>
+                        </div>
+                        <h3 class="text-xl font-bold mb-4">Equilíbrio</h3>
+                        <p class="text-gray-400">Todo poder deve ter um contrapeso. A tecnologia não deve ser exceção.</p>
+                    </div>
+                    <div class="bg-gray-900 p-6 rounded-lg">
+                        <div class="text-green-500 mb-4">
+                            <i data-feather="shield" class="w-10 h-10"></i>
+                        </div>
+                        <h3 class="text-xl font-bold mb-4">Proteção</h3>
+                        <p class="text-gray-400">Defender os vulneráveis é mais importante do que seguir protocolos cegamente.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Footer -->
+        <footer class="py-12 px-6 border-t border-gray-800">
+            <div class="max-w-4xl mx-auto text-center">
+                <h2 class="text-2xl font-bold mb-6">
+                    <span class="text-green-500">Dark</span>Hacker
+                </h2>
+                <div class="flex justify-center space-x-6 mb-6">
+                    <a href="#" class="text-gray-400 hover:text-green-500 transition">
+                        <i data-feather="github"></i>
+                    </a>
+                    <a href="#" class="text-gray-400 hover:text-green-500 transition">
+                        <i data-feather="twitter"></i>
+                    </a>
+                    <a href="#" class="text-gray-400 hover:text-green-500 transition">
+                        <i data-feather="mail"></i>
+                    </a>
+                </div>
+                <p class="text-gray-500 text-sm">
+                    "A tecnologia é uma ferramenta. O que importa é quem a controla e com qual propósito."
+                </p>
+                <p class="text-gray-600 mt-4 text-xs">
+                    © 2023 DarkHacker Network - Todos os direitos reservados
+                </p>
+            </div>
+        </footer>
+    </div>
+
+    <script>
+        feather.replace();
+        
+        // Initialize Vanta.js
+        VANTA.NET({
+            el: "#vanta-bg",
+            mouseControls: true,
+            touchControls: true,
+            gyroControls: false,
+            minHeight: 200.00,
+            minWidth: 200.00,
+            scale: 1.00,
+            scaleMobile: 1.00,
+            color: 0x4ade80,
+            backgroundColor: 0x111827,
+            points: 15.00,
+            maxDistance: 20.00,
+            spacing: 15.00
+        });
+
+        // Mobile menu toggle
+        document.querySelector('nav button').addEventListener('click', function() {
+            const menu = document.querySelector('nav div:nth-child(2)');
+            menu.classList.toggle('hidden');
+            menu.classList.toggle('flex');
+            menu.classList.toggle('flex-col');
+            menu.classList.toggle('absolute');
+            menu.classList.toggle('top-16');
+            menu.classList.toggle('right-6');
+            menu.classList.toggle('bg-gray-900');
+            menu.classList.toggle('p-4');
+            menu.classList.toggle('rounded-lg');
+            menu.classList.toggle('border');
+            menu.classList.toggle('border-gray-800');
+        });
+    </script>
+</body>
+</html>

@@ -1,288 +1,57 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Pedrin.7xs - API Developer & Tech Entrepreneur</title>
-    <script src="https://cdn.tailwindcss.com"></script>
-    <script src="https://unpkg.com/feather-icons"></script>
-    <script src="https://cdn.jsdelivr.net/npm/vanta@latest/dist/vanta.net.min.js"></script>
-    <style>
-        @import url('https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@400;700;900&display=swap');
-        body {
-            font-family: 'Red Hat Display', sans-serif;
-        }
-        .glow {
-            text-shadow: 0 0 10px rgba(99, 102, 241, 0.7);
-        }
-        .hero-bg {
-            background: linear-gradient(135deg, #000000 0%, #1a1a1a 100%);
-        }
-        .skill-card {
-            transition: transform 0.3s ease, box-shadow 0.3s ease;
-        }
-        .skill-card:hover {
-            transform: translateY(-5px);
-            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
-        }
-    </style>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Site Suspenso — Aviso Importante</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap');
+    body { font-family: 'Inter', system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial; }
+  </style>
 </head>
-<body class="bg-black text-white">
-    <!-- Vanta.js Background -->
-    <div id="vanta-bg" class="fixed top-0 left-0 w-full h-full z-0"></div>
-    
-    <div class="relative z-10">
-        <!-- Navigation -->
-        <nav class="px-6 py-4 flex justify-between items-center border-b border-indigo-600">
-            <div class="text-2xl font-bold">
-                <span class="text-indigo-600">Pedrin</span>.7xs
-            </div>
-            <div class="hidden md:flex space-x-8">
-                <a href="#about" class="hover:text-indigo-400 transition">Sobre</a>
-                <a href="#skills" class="hover:text-indigo-400 transition">Habilidades</a>
-                <a href="#projects" class="hover:text-indigo-400 transition">Projetos</a>
-                <a href="#mission" class="hover:text-indigo-400 transition">Missão</a>
-            </div>
-            <button class="md:hidden">
-                <i data-feather="menu"></i>
-            </button>
-        </nav>
+<body class="bg-gray-100 text-gray-900">
+  <div class="min-h-screen flex items-center justify-center p-6">
+    <div class="max-w-3xl w-full bg-white rounded-2xl shadow-lg border-l-8 border-yellow-500 overflow-hidden">
+      <div class="p-8 md:p-12 text-center">
+        <!-- Generic shield icon (SVG) -->
+        <div class="mx-auto w-24 h-24 flex items-center justify-center rounded-full bg-yellow-50 mb-6">
+          <svg xmlns="http://www.w3.org/2000/svg" class="w-12 h-12 text-yellow-600" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.5">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M12 2l7 4v6c0 5-3.5 9-7 10-3.5-1-7-5-7-10V6l7-4z" />
+            <path stroke-linecap="round" stroke-linejoin="round" d="M12 8v4l3 2" />
+          </svg>
+        </div>
 
-        <!-- Hero Section -->
-        <section class="hero-bg min-h-screen flex items-center px-6 py-20">
-            <div class="max-w-4xl mx-auto text-center">
-                <h1 class="text-5xl md:text-7xl font-bold mb-6 glow">
-                    <span class="text-indigo-600">Pedrin.7xs</span>
-                </h1>
-                <p class="text-xl md:text-2xl mb-8">
-                    Desenvolvedor de APIs • Tech Entrepreneur • Inovador
-                </p>
-                <div class="flex justify-center space-x-4">
-                    <a href="#projects" class="bg-indigo-600 hover:bg-indigo-700 px-6 py-3 rounded-lg font-bold transition">
-                        Meus Projetos
-                    </a>
-                    <a href="#mission" class="border border-indigo-600 hover:bg-indigo-600 hover:bg-opacity-10 px-6 py-3 rounded-lg font-bold transition">
-                        Minha Missão
-                    </a>
-                </div>
-            </div>
-        </section>
+        <h1 class="text-2xl md:text-3xl font-extrabold mb-4">Site Temporariamente Suspenso</h1>
+        <p class="text-gray-600 mb-6 max-w-xl mx-auto leading-relaxed">
+          Este site encontra-se temporariamente suspenso enquanto uma investigação está em andamento.
+          Estamos colaborando com as autoridades competentes e trabalhando para esclarecer os fatos.
+        </p>
 
-        <!-- About Section -->
-        <section id="about" class="py-20 px-6">
-            <div class="max-w-4xl mx-auto">
-                <h2 class="text-3xl md:text-4xl font-bold mb-12 text-center">
-                    <span class="text-indigo-600">//</span> Quem sou eu
-                </h2>
-                <div class="grid md:grid-cols-2 gap-12 items-center">
-                    <div>
-                        <p class="text-lg mb-4">
-                            Olá, eu sou o Pedrin.7xs, desenvolvedor full-stack e fundador de uma empresa especializada em desenvolvimento de APIs de alto desempenho.
-                        </p>
-                        <p class="text-lg mb-4">
-                            Minha jornada na tecnologia começou aos 14 anos e desde então venho construindo soluções escaláveis e inovadoras para problemas complexos.
-                        </p>
-                        <p class="text-lg">
-                            Especializado em arquitetura de sistemas distribuídos e microserviços, meu foco é criar infraestruturas que escalam de forma elegante.
-                        </p>
-                    </div>
-                    <div class="flex justify-center">
-                        <div class="w-64 h-64 bg-gray-800 rounded-full border-2 border-indigo-600 overflow-hidden">
-                            <!-- Placeholder for profile image -->
-                            <div class="w-full h-full bg-gray-700 flex items-center justify-center">
-                                <i data-feather="code" class="w-20 h-20 text-indigo-500"></i>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
+        <div class="text-left md:text-center max-w-lg mx-auto">
+          <p class="text-sm text-gray-500 mb-2"><strong>O que isso significa:</strong></p>
+          <ul class="list-inside list-disc text-gray-600 mb-4">
+            <li>O acesso a alguns serviços e conteúdos foi temporariamente interrompido.</li>
+            <li>Informações adicionais serão divulgadas assim que estiverem disponíveis.</li>
+            <li>Se você é usuário ou parceiro afetado, guarde registros relevantes (comprovantes, emails, logs).</li>
+          </ul>
 
-        <!-- Skills Section -->
-        <section id="skills" class="py-20 px-6 bg-gray-900">
-            <div class="max-w-4xl mx-auto">
-                <h2 class="text-3xl md:text-4xl font-bold mb-12 text-center">
-                    <span class="text-indigo-600">#</span> Minhas Habilidades
-                </h2>
-                <div class="grid md:grid-cols-3 gap-8">
-                    <div class="skill-card bg-gray-800 p-6 rounded-lg border-l-4 border-indigo-600">
-                        <div class="text-indigo-500 mb-4">
-                            <i data-feather="code" class="w-10 h-10"></i>
-                        </div>
-                        <h3 class="text-xl font-bold mb-2">Backend</h3>
-                        <p class="text-gray-400">Node.js, Python, PHP (Laravel), Java, Go, Rust. Bancos de dados SQL/NoSQL e arquitetura de microserviços.</p>
-                    </div>
-                    <div class="skill-card bg-gray-800 p-6 rounded-lg border-l-4 border-indigo-600">
-                        <div class="text-indigo-500 mb-4">
-                            <i data-feather="cpu" class="w-10 h-10"></i>
-                        </div>
-                        <h3 class="text-xl font-bold mb-2">DevOps</h3>
-                        <p class="text-gray-400">Docker, Kubernetes, CI/CD, AWS, GCP, Terraform. Automação de infraestrutura e deploy contínuo.</p>
-                    </div>
-                    <div class="skill-card bg-gray-800 p-6 rounded-lg border-l-4 border-indigo-600">
-                        <div class="text-indigo-500 mb-4">
-                            <i data-feather="database" class="w-10 h-10"></i>
-                        </div>
-                        <h3 class="text-xl font-bold mb-2">APIs</h3>
-                        <p class="text-gray-400">Design RESTful/GraphQL, autenticação JWT/OAuth, documentação Swagger/OpenAPI, rate limiting.</p>
-                    </div>
-                </div>
-            </div>
-        </section>
+          <p class="text-sm text-gray-500 mb-6">
+            <strong>Contato para dúvidas (comunicado oficial):</strong><br/>
+            Caso precise de informações formais, entre em contato através do e-mail de suporte: <a href="mailto:suporte@example.com" class="text-yellow-600 underline">suporte@example.com</a>
+          </p>
+        </div>
 
-        <!-- Projects Section -->
-        <section id="projects" class="py-20 px-6">
-            <div class="max-w-6xl mx-auto">
-                <h2 class="text-3xl md:text-4xl font-bold mb-12 text-center">
-                    <span class="text-indigo-600">API</span> Projetos & Empresa
-                </h2>
-                
-                <div class="grid md:grid-cols-2 gap-8">
-                    <div class="bg-gray-900 rounded-lg p-8 border border-gray-800">
-                        <div class="flex items-center mb-6">
-                            <div class="bg-indigo-600 p-3 rounded-full mr-4">
-                                <i data-feather="zap" class="w-6 h-6"></i>
-                            </div>
-                            <h3 class="text-2xl font-bold">DataFlow API</h3>
-                        </div>
-                        <p class="mb-6 text-gray-400">
-                            Plataforma de processamento de dados em tempo real que atende mais de 1 milhão de requisições por dia.
-                        </p>
-                        <div class="flex flex-wrap gap-2">
-                            <span class="bg-gray-800 text-indigo-400 px-3 py-1 rounded-full text-sm">Node.js</span>
-                            <span class="bg-gray-800 text-indigo-400 px-3 py-1 rounded-full text-sm">Kafka</span>
-                            <span class="bg-gray-800 text-indigo-400 px-3 py-1 rounded-full text-sm">Redis</span>
-                        </div>
-                    </div>
-                    
-                    <div class="bg-gray-900 rounded-lg p-8 border border-gray-800">
-                        <div class="flex items-center mb-6">
-                            <div class="bg-indigo-600 p-3 rounded-full mr-4">
-                                <i data-feather="lock" class="w-6 h-6"></i>
-                            </div>
-                            <h3 class="text-2xl font-bold">AuthCore</h3>
-                        </div>
-                        <p class="mb-6 text-gray-400">
-                            Solução de autenticação e autorização distribuída com OAuth 2.0 e OpenID Connect.
-                        </p>
-                        <div class="flex flex-wrap gap-2">
-                            <span class="bg-gray-800 text-indigo-400 px-3 py-1 rounded-full text-sm">Go</span>
-                            <span class="bg-gray-800 text-indigo-400 px-3 py-1 rounded-full text-sm">JWT</span>
-                            <span class="bg-gray-800 text-indigo-400 px-3 py-1 rounded-full text-sm">Kubernetes</span>
-                        </div>
-                    </div>
-                    
-                    <div class="bg-gray-900 rounded-lg p-8 border border-gray-800">
-                        <div class="flex items-center mb-6">
-                            <div class="bg-indigo-600 p-3 rounded-full mr-4">
-                                <i data-feather="dollar-sign" class="w-6 h-6"></i>
-                            </div>
-                            <h3 class="text-2xl font-bold">FinAPI</h3>
-                        </div>
-                        <p class="mb-6 text-gray-400">
-                            API de dados financeiros em tempo real com análise preditiva e histórico completo.
-                        </p>
-                        <div class="flex flex-wrap gap-2">
-                            <span class="bg-gray-800 text-indigo-400 px-3 py-1 rounded-full text-sm">Python</span>
-                            <span class="bg-gray-800 text-indigo-400 px-3 py-1 rounded-full text-sm">TensorFlow</span>
-                            <span class="bg-gray-800 text-indigo-400 px-3 py-1 rounded-full text-sm">PostgreSQL</span>
-                        </div>
-                    </div>
-                    
-                    <div class="bg-gray-900 rounded-lg p-8 border border-gray-800">
-                        <div class="flex items-center mb-6">
-                            <div class="bg-indigo-600 p-3 rounded-full mr-4">
-                                <i data-feather="map-pin" class="w-6 h-6"></i>
-                            </div>
-                            <h3 class="text-2xl font-bold">GeoAPI</h3>
-                        </div>
-                        <p class="mb-6 text-gray-400">
-                            Serviço de geolocalização com dados precisos e otimizado para alta performance.
-                        </p>
-                        <div class="flex flex-wrap gap-2">
-                            <span class="bg-gray-800 text-indigo-400 px-3 py-1 rounded-full text-sm">Rust</span>
-                            <span class="bg-gray-800 text-indigo-400 px-3 py-1 rounded-full text-sm">Redis</span>
-                            <span class="bg-gray-800 text-indigo-400 px-3 py-1 rounded-full text-sm">gRPC</span>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
+        <div class="flex justify-center gap-4">
+          <a href="/" class="px-6 py-2 bg-yellow-500 hover:bg-yellow-600 text-white font-semibold rounded-md transition">Voltar à Página Inicial</a>
+          <a href="mailto:suporte@example.com" class="px-6 py-2 border border-yellow-500 text-yellow-600 rounded-md hover:bg-yellow-50 transition">Enviar Solicitação</a>
+        </div>
 
-        <!-- Mission Section -->
-        <section id="mission" class="py-20 px-6 bg-gray-900">
-            <div class="max-w-4xl mx-auto text-center">
-                <h2 class="text-3xl md:text-4xl font-bold mb-6">
-                    <span class="text-indigo-600">⚔️</span> Minha Missão
-                </h2>
-                <p class="text-xl mb-12 max-w-3xl mx-auto text-gray-300 leading-relaxed">
-                    Minha missão é <span class="text-indigo-400 font-bold">combater a injustiça</span>.  
-                    Isso me move porque me dá raiva ver inocentes sendo presos enquanto os verdadeiros
-                    vagabundos continuam soltos pela internet ostentando.  
-                    Uso a tecnologia como arma para criar soluções que exponham a verdade, 
-                    fortaleçam a justiça e defendam quem realmente precisa.
-                </p>
-            </div>
-        </section>
-
-        <!-- Footer -->
-        <footer class="py-12 px-6 border-t border-gray-800">
-            <div class="max-w-4xl mx-auto text-center">
-                <h2 class="text-2xl font-bold mb-6">
-                    <span class="text-indigo-600">Pedrin</span>.7xs
-                </h2>
-                <div class="flex justify-center space-x-6 mb-6">
-                    <a href="#" class="text-gray-400 hover:text-indigo-400 transition">
-                        <i data-feather="github"></i>
-                    </a>
-                    <a href="#" class="text-gray-400 hover:text-indigo-400 transition">
-                        <i data-feather="linkedin"></i>
-                    </a>
-                    <a href="#" class="text-gray-400 hover:text-indigo-400 transition">
-                        <i data-feather="twitter"></i>
-                    </a>
-                </div>
-                <p class="text-gray-500">
-                    © 2023 Pedrin.7xs - Todos os direitos reservados
-                </p>
-            </div>
-        </footer>
+        <p class="text-xs text-gray-400 mt-8">
+          Nota: esta é uma notificação privada do operador do site. Não é um comunicado emitido por autoridades públicas.
+        </p>
+      </div>
     </div>
-
-    <script>
-        feather.replace();
-        
-        // Initialize Vanta.js
-        VANTA.NET({
-            el: "#vanta-bg",
-            mouseControls: true,
-            touchControls: true,
-            gyroControls: false,
-            minHeight: 200.00,
-            minWidth: 200.00,
-            scale: 1.00,
-            scaleMobile: 1.00,
-            color: 0x6366f1,
-            backgroundColor: 0x0,
-            points: 12.00,
-            maxDistance: 20.00,
-            spacing: 15.00
-        });
-
-        // Mobile menu toggle
-        document.querySelector('button.md\\:hidden').addEventListener('click', function() {
-            const menu = document.querySelector('div.hidden.md\\:flex');
-            menu.classList.toggle('hidden');
-            menu.classList.toggle('flex');
-            menu.classList.toggle('flex-col');
-            menu.classList.toggle('absolute');
-            menu.classList.toggle('top-16');
-            menu.classList.toggle('right-6');
-            menu.classList.toggle('bg-gray-900');
-            menu.classList.toggle('p-4');
-            menu.classList.toggle('rounded-lg');
-            menu.classList.toggle('shadow-xl');
-        });
-    </script>
+  </div>
 </body>
 </html>

@@ -3,47 +3,59 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <title>Aviso de Segurança</title>
+  <title>Mensagem para Evilin</title>
   <style>
-    body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial; 
-           margin:0; padding:0; display:flex; align-items:center; justify-content:center; min-height:100vh;
-           background: linear-gradient(180deg,#0f172a,#0b1220); color:#e6eef8; }
-    .card { background: rgba(255,255,255,0.04); padding:28px; border-radius:12px; max-width:780px; width:94%;
-           box-shadow: 0 10px 30px rgba(2,6,23,0.6); }
-    h1 { margin:0 0 8px 0; font-size:1.7rem; }
-    p { margin:0.6rem 0; line-height:1.45; color:#d7e6fb; }
-    .badge { display:inline-block; padding:6px 10px; border-radius:999px; background:#ffe4b5; color:#333; font-weight:600; margin-bottom:12px; }
-    .actions { margin-top:18px; display:flex; gap:12px; flex-wrap:wrap; }
-    .btn { padding:10px 14px; border-radius:8px; text-decoration:none; font-weight:600; border: none; cursor:pointer; }
-    .btn-primary { background:#0ea5a6; color:white; }
-    .btn-muted { background:transparent; color:#cde7ff; border:1px solid rgba(255,255,255,0.06); }
-    small { display:block; margin-top:12px; color:#9fb7d8; }
-    footer { margin-top:14px; color:#9fb7d8; font-size:0.85rem; }
+    body {
+      background: linear-gradient(180deg, #0f172a, #1e293b);
+      color: #e2e8f0;
+      font-family: "Segoe UI", Roboto, Arial, sans-serif;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      min-height: 100vh;
+      margin: 0;
+      padding: 20px;
+    }
+    .card {
+      max-width: 700px;
+      background: rgba(255, 255, 255, 0.04);
+      padding: 30px;
+      border-radius: 14px;
+      box-shadow: 0 10px 30px rgba(0, 0, 0, 0.4);
+    }
+    h1 {
+      margin-top: 0;
+      font-size: 1.7rem;
+      color: #7dd3fc;
+    }
+    p {
+      line-height: 1.6;
+      font-size: 1.05rem;
+    }
+    footer {
+      margin-top: 16px;
+      color: #94a3b8;
+      font-size: 0.9rem;
+    }
   </style>
 </head>
 <body>
-  <div class="card" role="main" aria-labelledby="title">
-    <span class="badge">Aviso de Segurança</span>
-    <h1 id="title">Estamos investigando um incidente</h1>
-    <p>Detectamos um problema de segurança que pode afetar o funcionamento do site. Por precaução, o site está temporariamente indisponível enquanto realizamos a investigação e aplicamos medidas corretivas.</p>
-    <p>Pedimos desculpas pelo transtorno. Levamos a segurança dos dados muito a sério e estamos trabalhando para restaurar os serviços com segurança.</p>
-
-    <div class="actions">
-      <a class="btn btn-primary" href="mailto:seguranca@seudominio.com?subject=Incidente%20-%20Informacoes" aria-label="Contactar suporte">Contactar suporte</a>
-      <a class="btn btn-muted" href="/status" aria-label="Página de status">Ver página de status</a>
-    </div>
-
-    <small>Ocasionalmente atualizaremos a <strong>/status</strong> com o progresso da investigação. Se você recebeu instruções específicas por e-mail, siga-as.</small>
-
-    <footer>
-      <div>Equipe de segurança — SeuSite</div>
-      <div>Última atualização: <time id="updated">—</time></div>
-    </footer>
+  <div class="card">
+    <h1>Oi, Evilin 💙</h1>
+    <p>
+      Eu queria te dizer que eu gosto muito de você, de verdade.  
+      Mas pensando bem em tudo o que tem acontecido — e também por respeito à sua mãe —  
+      acho que o melhor agora é a gente dar um tempo.
+    </p>
+    <p>
+      Não é por falta de sentimento, é só porque quero evitar que as coisas fiquem difíceis pra você ou pra mim.  
+      Às vezes o tempo ajuda a acalmar o coração e a deixar tudo mais leve.
+    </p>
+    <p>
+      Eu continuo torcendo pelo seu bem e espero que, quando tudo estiver mais tranquilo,  
+      a gente possa conversar de novo, sem pressão e com calma.
+    </p>
+    <footer>— Com carinho, [seu nome]</footer>
   </div>
-
-  <script>
-    // Atualiza automaticamente a data/hora exibida
-    document.getElementById('updated').textContent = new Date().toLocaleString('pt-BR');
-  </script>
 </body>
 </html>
